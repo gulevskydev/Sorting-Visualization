@@ -60,9 +60,7 @@ const renderMrgeSort = (arr, setIsDisabled) => {
   let delay =
     (arr.length > 10) & (arr.length < 90) ? 30 : arr.length < 10 ? 50 : 10;
   console.log(delay);
-  const [animations, sortedArr] = mergeSort(
-    arr.map((el) => parseInt(el.style.height))
-  );
+  const [animations] = mergeSort(arr.map((el) => parseInt(el.style.height)));
 
   for (let i = 0; i < animations.length; i++) {
     const isColorChange =
@@ -72,7 +70,7 @@ const renderMrgeSort = (arr, setIsDisabled) => {
     if (isColorChange === true) {
       const [comparision, barOneIndex, barTwoIndex] = animations[i];
       const color =
-        animations[i][0] == "comapreFirstTime" ? "#6c63ff" : SORTED_NODE;
+        animations[i][0] == "comapreFirstTime" ? GREEN : SORTED_NODE;
       const barOneStyle = arrayBars[barOneIndex].style;
       const barTwoStyle = arrayBars[barTwoIndex].style;
       setTimeout(() => {
@@ -91,7 +89,6 @@ const renderMrgeSort = (arr, setIsDisabled) => {
   setTimeout(() => {
     setIsDisabled(false);
   }, animations.length * 10);
-  // await new Promise((resolve) => setTimeout(resolve, arr.length * 10));
 };
 
 export default renderMrgeSort;

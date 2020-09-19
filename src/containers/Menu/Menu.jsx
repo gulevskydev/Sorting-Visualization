@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Menu.scss";
-import "../../utils/range";
 import Button from "../../components/Button/Button";
 import RangeInput from "../../components/RangeInput/RangeInput";
 import NavAlgo from "../../components/NavAlgo/NavAlgo";
@@ -21,7 +20,6 @@ export default function Menu({
       setTimeout(() => {
         arr.map((el) => {
           el.style.backgroundColor = "#B4D0E7";
-          el.style["border-bottom"] = " 0.4rem solid #b4d0e7";
           el.transitionDuration = "0.2s";
           return el;
         });

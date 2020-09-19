@@ -26,11 +26,12 @@ export default function MainContent({ setValueRange, valueRange, newArr }) {
             style={{
               height: `${node * 2.5}px`,
               width: `${1000 / valueRange}px`,
-              background: `${newArr ? "#B4D0E7" : null}`,
-              borderBottom: `0.4rem solid #b4d0e7`,
             }}></div>
         );
       })}
     </div>
   );
 }
+
+// background: `${newArr ? "#B4D0E7" : null}`,
+// borderBottom: `0.4rem solid #b4d0e7`,

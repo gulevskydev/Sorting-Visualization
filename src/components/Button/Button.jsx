@@ -4,15 +4,10 @@ import bubbleSort from "../../algorithms/bubbleSort";
 import quickSort from "../../algorithms/quickSort";
 import heapSort from "../../algorithms/heapSort";
 import renderMergeSort from "../../algorithms/mergeSort";
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 async function selectAlgo(algo, setIsDisabled) {
   let arr = [...document.querySelectorAll(".node")];
 
-  // if (checkIfSorted(arr)) {
-  //   setIsDisabled(false);
-  //   alert("SORTED");
-  // } else
   if (algo === "Merge Sort") {
     let arr = [...document.querySelectorAll(".node")];
 
@@ -37,8 +32,6 @@ function checkIfSorted(arr) {
     unSorted.filter((el, id) => el === arrSorted[id]).length ===
     arrSorted.length
   ) {
-    console.log("true");
-    console.log(arr[arr.length - 1].style.background);
     return true;
   } else {
     return false;
@@ -55,15 +48,10 @@ function sortIf(arr, setIsDisabled) {
       arrSorted.length &&
     arr.every((el) => el.style.background.includes("rgb(186, 99, 255)"))
   ) {
-    // setTimeout(() => {
-    console.log(true);
     setIsDisabled(false);
     return;
-    // break;
-    // });
   }
   setTimeout(() => {
-    console.log(false);
     sortIf(arr, setIsDisabled);
   });
 }

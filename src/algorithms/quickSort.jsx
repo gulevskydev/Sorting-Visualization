@@ -15,7 +15,7 @@ const quickSortHelper = async (array, startIdx, endIdx) => {
   if (startIdx >= endIdx) {
     if (endIdx < array.length && endIdx > -1) {
       array[endIdx].style.background = SORTED_NODE;
-      array[endIdx].style["border-bottom"] = `0.4rem solid ${SORTED_NODE}`;
+      // array[endIdx].style["border-bottom"] = `0.4rem solid ${SORTED_NODE}`;
     }
     return;
   }
@@ -65,9 +65,6 @@ const quickSortHelper = async (array, startIdx, endIdx) => {
   array[0].style.background = SORTED_NODE;
   array[rightIdx].style.background = SORTED_NODE;
   array[pivotIdx].style.background = SORTED_NODE;
-  array[rightIdx].style["border-bottom"] = `0.4rem solid ${SORTED_NODE}`;
-  array[0].style["border-bottom"] = `0.4rem solid ${SORTED_NODE}`;
-  array[pivotIdx].style["border-bottom"] = `0.4rem solid ${SORTED_NODE}`;
   swap(pivotIdx, rightIdx, array);
   await new Promise((resolve) => setTimeout(resolve, delay));
 

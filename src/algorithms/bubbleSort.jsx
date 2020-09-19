@@ -26,9 +26,6 @@ const bubbleSort = async (inputArr) => {
       inputArr[j].style.background = MAIN_COLOR;
     }
     inputArr[len - (i + 1)].style.background = SORTED_NODE;
-    inputArr[len - (i + 1)].style[
-      "border-bottom"
-    ] = `0.4rem solid ${SORTED_NODE}`;
   }
 };
 export default bubbleSort;

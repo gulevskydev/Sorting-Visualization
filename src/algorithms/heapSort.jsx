@@ -12,7 +12,6 @@ const heapSort = async (array) => {
   for (let i = array.length - 1; i >= 0; i--) {
     swap(0, i, array);
     array[i].style.background = SORTED_NODE;
-    array[i].style["border-bottom"] = `0.4rem solid ${SORTED_NODE}`;
     await new Promise((resolve) => setTimeout(resolve, delay));
     await siftDown(0, i - 1, array, delay);
   }

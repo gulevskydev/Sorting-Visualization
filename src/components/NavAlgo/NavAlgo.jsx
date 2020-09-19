@@ -1,5 +1,4 @@
 import React from "react";
-import bubbleSort from "../../algorithms/bubbleSort";
 import "./NavAlgo.scss";
 function NavAlgo({ setAlgo, algo }) {
   return (

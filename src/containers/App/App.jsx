@@ -6,7 +6,6 @@ import "./App.scss";
 function App() {
   const [valueRange, setValueRange] = useState(50);
   const [newArr, setNewArr] = useState(false);
-  const [sortButton, setSortButton] = useState(false);
   const [algo, setAlgo] = useState("Bubble Sort");
 
   return (
