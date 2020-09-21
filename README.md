@@ -1,6 +1,6 @@
 # Weather App
 
-## [Watch it live](https://gulevskydev-sorting.netlify.app/)
+## [Watch it live](https://gulevskydev-sorting-visualier.netlify.app/)
 
 ![Weather-app](./logo-git.jpg)
 
