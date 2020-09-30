@@ -1,4 +1,4 @@
-# Weather App
+# Sorting Visualizer
 
 ## [Watch it live](https://gulevskydev-sorting-visualier.netlify.app/)
 
